@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "91654531644",
+    "project_id": "notificaciones-4db9a",
+    "storage_bucket": "notificaciones-4db9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91654531644:android:144a68205e187c69b7f139",
+        "android_client_info": {
+          "package_name": "com.Beniplas.notificacionespush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91654531644-hiuh88q866jdhnb3afk8s6omupqkhjor.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM1WQTGv28hNCF70muhymTYXYh59rCmlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91654531644-hiuh88q866jdhnb3afk8s6omupqkhjor.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

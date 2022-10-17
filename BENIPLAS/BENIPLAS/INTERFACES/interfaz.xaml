@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="interfaz.png"
+             x:Class="BENIPLAS.interfaz">
+    <ContentView>
+        <Grid RowDefinitions="20*,20*, 20*,5*, 5*, 5*, 20*"
+              ColumnDefinitions="10*, 80*, 10*">
+            <Label Text="Ingrese la contraseña en el teclado antes de que termine el tiempo"
+                   TextColor="Black"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   HorizontalTextAlignment="Center"></Label>
+            <ContentView Grid.Column="1"
+                         Grid.Row="2">
+                <Grid RowDefinitions="40*,40*,40*">
+                    <ContentView Grid.Row="0">
+                        <Grid ColumnDefinitions="20*, 80*">
+                            <Image Grid.Column="0"
+                                   Source="candado.png"></Image>
+                            <Entry Grid.Column="1"
+                                   Placeholder="Contraseña"
+                                   PlaceholderColor="Black"
+                                   TextColor="Black"
+                                   x:Name="ContrasenaI"></Entry>
+                        </Grid>
+                    </ContentView>
+                </Grid>
+            </ContentView>
+            <Button Text="Cerrar sesion"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    x:Name="CERRS"
+                    Clicked="CERRS_Clicked"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    FontAttributes="Bold"
+                    BorderWidth="1"
+                    CornerRadius="10"></Button>
+            <Button Text="Cambiar contraseña"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent"
+                    x:Name="CI"
+                    Clicked="CI_Clicked"></Button>
+        </Grid>
+    </ContentView>
+</ContentPage>

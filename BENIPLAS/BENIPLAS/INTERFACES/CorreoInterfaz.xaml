@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="interfaz.png"
+             x:Class="BENIPLAS.INTERFACES.CorreoInterfaz">
+
+    <ContentView>
+        <Grid RowDefinitions="20*,30*,5*,10*,20*"
+              ColumnDefinitions="10*, 80*, 10*">
+            <ContentView Grid.Column="1"
+                         Grid.Row="1">
+                <Grid RowDefinitions="10*,40*,40*">
+                    <ContentView Grid.Row="1">
+                        <Grid ColumnDefinitions="20*,80*">
+                            <Image Source="usuario.png"
+                                   Grid.Column="0"
+                                   Grid.Row="0"></Image>
+                            <Entry Placeholder="Correo Electronico"
+                                   PlaceholderColor="Black"
+                                   TextColor="Black"
+                                   x:Name="UsuarioL"
+                                   Grid.Column="1"
+                                   Grid.Row="0"></Entry>
+                        </Grid>
+                    </ContentView>
+                </Grid>
+            </ContentView>
+            <Button Text="Enviar Correo"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    x:Name="ENV"
+                    Clicked="ENV_Clicked"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    FontAttributes="Bold"
+                    BorderWidth="1"
+                    CornerRadius="10"></Button>
+            <Button Text="Regresar"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent"
+                    x:Name="REGRESARC"
+                    Clicked="REGRESARC_Clicked"></Button>
+        </Grid>
+    </ContentView>
+</ContentPage>
